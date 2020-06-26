@@ -27,12 +27,19 @@ Route::get('hello', function () {
 //    return $_POST['id'].'注册成功';
 //});
 
+Route::post('user/addUser', 'UserController@addUser');
+Route::post('user/login', 'UserController@login');
+//Route::get('user/checkLogin', 'UserController@checkLogin');
+Route::get('user/getPublicKey', 'UserController@getPublicKey');
+
+Route::post('sendMail/sendCheckcode', 'SendMailController@sendCheckcode');
+
+Route::get('user/loginOut', 'UserController@loginOut');
+
 
 Route::group(['middleware'=>['check']], function () {
-    Route::get('sal', function () {
-        return '访问成功';
-    });
-    Route::post('user/addUser', 'UserController@addUser');
-    Route::post('user/login','UserController@login');
+    Route::get('user/getPersonMessage', 'UserController@getPersonMessage');
 });
-Route::get('user/checkLogin', 'UserController@checkLogin');
+
+
+//Route::post('sendMail/sendCheckcode', 'SendMailController@sendCheckcode');
