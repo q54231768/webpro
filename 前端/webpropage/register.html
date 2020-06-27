@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="Stylesheet" type="text/css" href="static/css/css.css" />
+<script type="text/javascript"  src="static/js/jquery-3.3.1.min.js"  charset="utf-8"  ></script>
+<script type="text/javascript"  src="static/js/aboutregister.js"    charset="utf-8"  ></script>
+<script type="text/javascript"  src="static/js/md5.js"  charset="utf-8"    ></script>
+	<script src="static/js/jsencrypt.js"></script>
+	<script type="text/javascript" src="static/js/encrypttools.js" ></script>
+	<title>注册界面</title>
+
+</head>
+<div>
+
+</div>
+<body>
+<div class="box" id="cd">
+		<div class="center">
+			<h1>
+				<a href="login.html" class="title">登录</a>&nbsp;注册
+			</h1>
+		</div>
+		    <div class="center">
+				<input type="text" placeholder="账号" maxlength="15" required="required" id="id" name="id"  />
+			</div>
+			<div class="center">
+				<input type="text" placeholder="邮箱" maxlength="40" required="required" id="email" name="email"  />
+			</div>
+			<div class="center">
+				<input type="text" placeholder="用户名" maxlength="20" required="required" id="name" name="name"  />
+			</div>
+			<div class="center">
+				<input type="password" placeholder="密码" maxlength="20"  required="required" id="password" name="password"  />
+			</div>
+	<div style="margin-left: 150px;">
+		<input type="text"   placeholder="验证码" name="checkCode" id="checkCode" value=""  style="width: 200px;">
+		<input type="button" id="idCodeButton" value="获取验证码" onclick="getCheckcode()"/>
+	</div>
+			<div class="center">
+				<input type="button" value="注册" id="signUp" class="button" onclick="registercheck()" />
+			</div>
+			
+	</div>	
+</body>
+<script>getPublicKey()</script>
+</html>

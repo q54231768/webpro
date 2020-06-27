@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="Stylesheet" type="text/css" href="static/css/css.css" />
+<script type="text/javascript" src="static/js/jquery-3.3.1.min.js"  charset="utf-8"   ></script>
+<script type="text/javascript"  src="static/js/userlogin.js"  charset="utf-8"  ></script>
+<script type="text/javascript"  src="static/js/md5.js"></script>
+	<script type="text/javascript" src="static/js/jsencrypt.js" ></script>
+	<script type="text/javascript" src="static/js/encrypttools.js" ></script>
+	<title>submit form</title>
+</head>
+<div>
+</div>
+
+<body>
+<div class="box">
+		<div class="center">
+			<h1>
+				登录&nbsp;<a href="register.html" class="title">注册</a>
+			</h1>
+			</div>
+			
+			<div class="center">
+				<input type="text" placeholder="账号" maxlength="15" required="required" id="id" name="id" />
+			</div>
+	       
+			<div class="center">
+				<input type="password" placeholder="密码" maxlength="40" required="required" id="password" name="password" />
+			</div>
+
+			<div class="center">
+				<input type="button" value="登录" id="login" class="button" onclick="logincheck()" />
+			</div>
+	<h2><a  href="changePassWord.html">忘记密码</a></h2>
+	</div>
+</body>
+<script>getPublicKey()</script>
+</html>

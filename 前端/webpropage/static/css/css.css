@@ -1,0 +1,96 @@
+body{
+    background-image: url('/static/movieImg/u=2190355561,1636083433&fm=26&gp=0.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+input{
+	height: 35px;
+	width: 300px;
+	margin-top: 10px;
+	border: 0px;
+	border-bottom: #D8D8D8 1px solid;
+	font-size: 15px;
+}
+
+
+
+h1 {
+	font-size: 30px;
+	font-weight: normal;
+	color: #0084FF;	
+}	
+h2 {
+	margin-left: 50px;
+	font-size: 15px;
+	font-weight: normal;
+	color: gray;	
+}		
+
+font {
+	color: gray;
+	font-size: 12px;
+	margin-left: 50px;
+}
+
+a {
+	color: gray;
+	text-decoration: none;
+	font-size: 15px;
+}
+
+img {
+	width: 145px;
+	height: 40px;
+	border: 0px;
+	vertical-align: bottom;	
+}
+
+.box{
+	height: auto;
+	background-color: transparent;
+	width: 600px;
+	margin-top: 50px;
+	margin-bottom: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0px 0px 16px #888888;
+}
+
+.center {
+	text-align: center;
+}
+
+.sexselect{
+	margin-left: 150px;
+	color: gray;
+}
+
+.button {
+	height: 40px;
+	width: 305px;
+	background-color: #0084FF;
+	margin-top: 25px;
+	border: none;
+	border-radius: 3px;
+	color: white;
+	font-size: 16px;
+}
+
+.title{
+	font-size:23px;
+}
+
+#checkccode {
+	width: 200px;
+	height: 35px;
+	vertical-align: bottom;
+}
+#idCodeButton {
+	width: 100px;
+	height: 35px;
+	vertical-align: bottom;
+}

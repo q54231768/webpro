@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="Stylesheet" type="text/css" href="static/css/css.css" />
+    <script type="text/javascript"  src="static/js/jquery-3.3.1.min.js"  charset="utf-8"  ></script>
+    <script type="text/javascript" src="static/js/personPage.js" charset="utf-8"  ></script>
+    <script type="text/javascript" src="static/js/jsencrypt.js" ></script>
+    <title>Title</title>
+</head>
+<body>
+<div style="margin-left: 1400px">
+    <input type="button"  style="background-color: aqua;width: 120px" value="登出" class="button" onclick="loginOut()" />
+</div>
+<div class="box">
+
+    <div class="center">
+        <label>账号:</label> <input type="text"  maxlength="15" required="required" id="id" name="id" />
+    </div>
+
+    <div class="center">
+        <label>用户名:</label> <input type="text"  maxlength="40" required="required" id="userName" name="userName" />
+    </div>
+
+    <div class="center">
+        <label>邮箱:</label> <input type="text"  maxlength="40" required="required" id="email" name="email" />
+    </div>
+    <div class="center">
+        <label>注册时间:</label> <input type="text"  maxlength="40" required="required" id="createTime" name="createTime" />
+    </div>
+    <div class="center">
+        <label>登陆次数:</label> <input type="text"  maxlength="40" required="required" id="landingTimes" name="landingTimes" />
+    </div>
+</div>
+</body>
+<script>getUserMessage()</script>
+</html>
