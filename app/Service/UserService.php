@@ -51,7 +51,7 @@ class UserService
             } else {
                 if (!$this->userDao->updateUserLoginMessage($user['id'])) {//更新该用户登录信息，如最近登录时间.登录次数
                     DB::commit();
-                    return 'false';
+                    return false;
                 }
             }
             DB::commit();

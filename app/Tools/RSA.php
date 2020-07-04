@@ -37,7 +37,6 @@ class RSA//rsa加密工具
         $str=str_replace(' ', '', $str);
         $str=str_replace($previousStr, '', $str);
         $str=str_replace($nextStr, '', $str);
-        $str=str_replace(DIRECTORY_SEPARATOR, '', $str);
         $targetStr=$str;
         return $targetStr;
     }
